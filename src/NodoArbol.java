@@ -35,8 +35,10 @@ public class NodoArbol <T> {
       if(hijo==null){
           hijo= new NodoArbol[2];
       }
+      if(hijo!=null && hijo[0]!=null && hijo[1]!=null ){
         hijo[posicion] = new NodoArbol(dato,null);
     }
+  }   
 //System.out.println(","+n.dato);
     
 }
