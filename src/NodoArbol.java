@@ -27,18 +27,18 @@ public class NodoArbol <T> {
         System.out.print(this.dato);
         if(hijo == null) return;
         for(NodoArbol n : hijo ){
+            if(n!=null){
             System.out.print(", ");       
         n.preOrden();
+            }
         }
     }
   public void setHijo(int posicion, T dato){
       if(hijo==null){
           hijo= new NodoArbol[2];
       }
-      if(hijo!=null && hijo[0]!=null && hijo[1]!=null ){
         hijo[posicion] = new NodoArbol(dato,null);
-    }
-  }   
+  }
 //System.out.println(","+n.dato);
     
 }
